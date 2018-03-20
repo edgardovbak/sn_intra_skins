@@ -1,0 +1,17 @@
+.login_page {
+    max-width: rem(360);
+    margin: 0 auto;
+    border: 1px solid $gray_2;
+    padding: 0 rem(15) rem(15);
+    border-radius: rem(10);
+}
+
+.fix_block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}

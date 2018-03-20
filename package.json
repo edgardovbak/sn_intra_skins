@@ -1,0 +1,38 @@
+{
+  "name": "edgar",
+  "version": "1.0.0",
+  "description": "gulp  package",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-shorthand": "^1.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-csslint": "^1.0.0",
+    "gulp-file-include": "^1.1.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-pagebuilder": "^0.1.4",
+    "gulp-size": "^2.1.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-webserver": "^0.9.1",
+    "jshint": "^2.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "edgar dovbak",
+  "license": "ISC"
+}

@@ -1,0 +1,140 @@
+.sn_sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: rem($sidebar_width);
+    width: 100%;
+    background-color: $dark_gray;
+    color : $white;
+    border-right: 1px solid $dark_gray;
+    // overflow-y: auto;
+    padding-bottom: rem(20);
+    transition: all .3s ease;
+
+    &__logo {
+        height: rem($header_height);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $dark_blue;
+    }
+
+    &__user {
+        background-color: $blue;
+        color: $white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: rem(12);
+        margin-bottom: rem(15);
+        border-top: 1px solid $light_blue;
+        border-right: 1px solid $light_blue;
+        border-bottom: 1px solid $light_blue;
+
+        &__avatar {
+            width: rem(100);
+            height: rem(100);
+            margin-right: rem(20);
+            border-radius: 100%;
+            overflow: hidden;
+            display: none;
+
+            &--default {
+                font-size: rem(50);
+                margin-right: rem(20);
+            }
+        }
+    }
+
+    &__menu {
+
+        &__item {
+            height: rem(53);
+            padding: 0 rem(12);
+            // background-color: $dark_gray_2;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: all .2s ease;
+
+            &__icon {
+                display: inline-block;
+                background-color: $black;
+                width: rem(48);
+                height: rem(48);
+                border-radius: 100%;
+                text-align: center;
+                line-height: rem(48);
+                vertical-align: middle;
+                margin-right: rem(10);
+                color: $gray_2;
+                transition: all .2s ease;
+                font-size: rem(24);
+                transition: all .3s ease;
+            }
+
+            &__name {
+                opacity: 1;
+                transition: all 2s ease;
+                transition-delay: 2s;
+            }
+
+            &:hover,
+            &.active {
+                background-color: $dark_gray_2;
+                cursor: pointer;
+                transition: all .2s ease;
+
+                .sn_sidebar__menu__item__icon {
+                    background-color: $gray_3;
+                    color: $white;
+                }
+
+                .sn_sidebar__menu__item__name {
+                    color : $blue;
+                }
+            }
+        }
+
+
+    }
+}
+
+.sn_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: rem($header_height);
+    right: rem(18);
+    top: 0;
+    cursor: pointer;
+    display: none;
+
+    span {
+        display: block;
+        background-color: $white;
+        height: 4px;
+        position: relative;
+        width: rem(45);
+
+        &:before,
+        &:after {
+            display: block;
+            content: '';
+            position: absolute;
+            height: 4px;
+            background-color: inherit;
+            width: 100%;
+        }
+
+        &:after {
+            top: 10px;
+        }
+
+        &:before {
+            top: -10px;
+        }
+    }
+}

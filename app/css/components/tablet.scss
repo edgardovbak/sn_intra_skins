@@ -1,0 +1,80 @@
+@media only screen and (max-width: rem(1200)) and (min-width: rem(768)) {
+
+    .content_to_right:not(.open) {
+        padding-left: rem($sidebar_width_resp);
+        transition: all .3s ease;
+
+        .sn_sidebar {
+            max-width: rem($sidebar_width_resp);
+            transition: all .3s ease;
+
+            &__logo {
+                height: rem($header_height);
+
+                a {
+                    display: none;
+                }
+            }
+
+            &__user {
+                justify-content: center;
+
+                &__name {
+                    display: none;
+
+                }
+
+                &__avatar--default {
+                    margin-right: 0;
+                }
+            }
+
+            &__menu {
+
+                &__item {
+                    justify-content: center;
+                    height: 4.125rem;
+                    padding: 0 0.5rem;
+
+                    &__icon {
+                        margin-right: 0;
+                        width: 4rem;
+                        height: 4rem;
+                        line-height: 4rem;
+                    }
+
+                    &__name {
+                        display: none;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .sn_header {
+            left : rem($sidebar_width_resp);
+            transition: all .3s ease;
+
+            &__logo {
+                display: block;
+            }
+        }
+
+        &.open {
+            padding-left: rem($sidebar_width);
+
+            .sn_header {
+                left : rem($sidebar_width);
+            }
+
+            .sn_sidebar {
+                max-width: rem($sidebar_width);
+            }
+        }
+    }
+
+    .sn_menu {
+        display: flex;
+    }
+
+}

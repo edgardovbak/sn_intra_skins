@@ -1,0 +1,21 @@
+$browser-context: 16; // Default font size
+
+@function em($pixels) {
+    @return $pixels / $browser-context * 1em;
+}
+
+
+@function rem($pixels) {
+    @return $pixels / $browser-context * 1rem;
+}
+
+/* hide visual*/
+@mixin  sr_only() {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    left: -1000em;
+    overflow: hidden;
+    display: inline-block;
+}

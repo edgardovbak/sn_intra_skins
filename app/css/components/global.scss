@@ -1,0 +1,82 @@
+.content_to_right {
+    padding: rem($header_height) 0 0 rem($sidebar_width);
+    transition: all .3s ease;
+}
+
+.sn_wrapp {
+    max-width: rem($content_width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 rem(15);
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+body {
+    background-color: $gray;
+    font-family: $font_base;
+}
+
+
+.sn_title {
+    font-size: rem(36);
+    font-weight: 500;
+    padding-bottom: rem(10);
+    border-bottom: 1px solid $black;
+    width: 100%;
+
+    &--description {
+        margin-bottom: rem(10);
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+}
+
+.sn_btn {
+    background-color: $green_2;
+    color: $white;
+    border: 1px solid $green_2;
+    font-size: 1rem;
+    padding: 0 rem(20);
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: rem(10);
+    text-transform: capitalize;
+    line-height: rem(35);
+    display: inline-block;
+
+    &:hover {
+        background-color: $light_green;
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    line-height: rem(25);
+    padding: 0 rem(10);
+    box-sizing: border-box;
+    margin-bottom: rem(10);
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset {
+    margin-bottom: rem(10);
+}
+
+legend {
+    padding: 0 rem(10);
+}
+
+label {
+    font-size: rem(13);
+    padding: 0 rem(10);
+}

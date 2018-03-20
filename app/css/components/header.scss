@@ -1,0 +1,51 @@
+.sn_header {
+    background: $white;
+    position: fixed;
+    top: 0;
+    left: rem($sidebar_width);
+    right: 0;
+    height: rem($header_height);
+    border-bottom: 1px solid $black;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: none;
+    }
+
+    &__search {
+        position: relative;
+        display: inline-block;
+
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: rem(55);
+            background: none;
+            border: none;
+            color: $dark_gray_3;
+            font-size: rem(23);
+        }
+
+        input {
+             max-width: rem(600);
+             width: 100%;
+             border: 3px solid $dark_gray_3;
+             height: rem(43);
+             padding: 0 rem(60) 0 rem(12);
+             box-sizing: border-box;
+             border-radius: rem(15);
+             color: $dark_gray_3;
+             margin-bottom: 0;
+        }
+    }
+}
