@@ -24,6 +24,7 @@ body {
     padding-bottom: rem(10);
     border-bottom: 1px solid $black;
     width: 100%;
+    text-align: left;
 
     &--description {
         margin-bottom: rem(10);
@@ -35,6 +36,10 @@ body {
 a {
     color: $blue;
     text-decoration: none;
+
+    &:hover {
+        color: $blue_dark;
+    }
 }
 
 .sn_btn {
@@ -51,7 +56,16 @@ a {
     display: inline-block;
 
     &:hover {
-        background-color: $light_green;
+        background-color: $green_3;
+    }
+
+    &--error {
+        background-color: $red_2;
+        border: 1px solid $red_2;
+
+        &:hover {
+            background-color: $red;
+        }
     }
 }
 
@@ -79,4 +93,32 @@ legend {
 label {
     font-size: rem(13);
     padding: 0 rem(10);
+}
+
+.sn_overflow {
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid $green;
+        padding: rem(5);
+
+        &:first-child {
+            text-align: left;
+        }
+    }
 }

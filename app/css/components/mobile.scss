@@ -5,8 +5,9 @@
         transition: all .3s ease;
 
         .sn_sidebar {
-            left: rem(-$sidebar_width);
+            left: rem(-$sidebar_width_mobile);
             transition: all .3s ease;
+            max-width: rem($sidebar_width_mobile);
         }
 
         .sn_header {
@@ -33,5 +34,16 @@
         background-color: $blue;
         padding: 0 rem(10);
     }
+
+    .content_to_right {
+        
+        &.open {
+
+            .sn_overflow {
+                display: block;
+            }
+        }
+    }
+
 
 }

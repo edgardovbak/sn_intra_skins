@@ -12,7 +12,9 @@
                 height: rem($header_height);
 
                 a {
-                    display: none;
+                    position: relative;
+                    left: rem(-300);
+                    transition: all .3s ease; 
                 }
             }
 
@@ -35,6 +37,10 @@
                     justify-content: center;
                     height: 4.125rem;
                     padding: 0 0.5rem;
+
+                    &:hover {
+                        background: none;
+                    }
 
                     &__icon {
                         margin-right: 0;
@@ -59,16 +65,14 @@
                 display: block;
             }
         }
+    }
 
+    .content_to_right {
+        
         &.open {
-            padding-left: rem($sidebar_width);
 
-            .sn_header {
-                left : rem($sidebar_width);
-            }
-
-            .sn_sidebar {
-                max-width: rem($sidebar_width);
+            .sn_overflow {
+                display: block;
             }
         }
     }
