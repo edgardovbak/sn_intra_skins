@@ -13,8 +13,8 @@ All items that is used in this skin, and how to use it, you can find on index pa
 Styles are designed so that it's convenient to make changes. 
 In file app/css/components/variables.scss is a list with parameters for some components and a list of all colors that is used in skin.
 
-![Desktop](https://github.com/edgardovbak/sn_intra_skins/image/desctop.png)
+![Desktop](https://github.com/edgardovbak/sn_intra_skins/blob/master/image/desctop.png)
 
-![Tablet](https://github.com/edgardovbak/sn_intra_skins/image/tablet.png)
+![Tablet](https://github.com/edgardovbak/sn_intra_skins/blob/master/image/tablet.png)
 
-![Mobile](https://github.com/edgardovbak/sn_intra_skins/image/mobile.png)
+![Mobile](https://github.com/edgardovbak/sn_intra_skins/blob/master/image/mobile.png)
