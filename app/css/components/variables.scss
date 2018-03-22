@@ -1,3 +1,12 @@
+/* 
+bg - bacground color
+cl - color
+lh - lineheight
+
+
+*/
+
+
 $red : #ec4f4f;
 $red_2 : #e06767;
 $gray : #edecec;
@@ -25,11 +34,44 @@ $sidebar_width: 350;
 $content_width: 1200;
 $header_height: 90;
 
+// fonts
 $fontSize : 16;
-$font_base : arial;
+$font_arial : 'arial';
+$font_fira : 'Fira Sans', sans-serif;
+$font_roboto : 'Roboto Condensed', sans-serif;
 
+$font_base : $font_roboto;
 
 //  responsive styles
 $sidebar_width_resp : 80;
 $header_height_resp: 55;
 $sidebar_width_mobile: 250;
+
+// buttons 
+$btn_bg_default : $green_2;
+$btn_bg_default_border : $green_2;
+$btn_bg_default--hover : $green_3;
+
+$btn_bg_error : $red_2;
+$btn_bg_error_border : $red_2;
+$btn_bg_error--hover : $red;
+
+$btn_bg_disbled : $gray_2;
+$btn_bg_disbled_border : $gray_2;
+$btn_bg_disbled--hover : $dark_gray_3;
+
+// link 
+$link_cl : $blue;
+$link_cl--hover : $blue_dark;
+
+$link_btn_cl : $orange;
+$link_btn_bg : transparent;
+$link_btn_border : $orange;
+
+$link_btn_cl--hover : $white;
+$link_btn_bg--hover : $orange;
+$link_btn_border--hover : $orange_2;
+
+// input
+$input_height : 25;
+$input_lh : $input_height;

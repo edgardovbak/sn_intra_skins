@@ -71,6 +71,8 @@
         
         &.open {
 
+            overflow: hidden;
+
             .sn_overflow {
                 display: block;
             }

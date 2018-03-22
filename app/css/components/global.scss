@@ -25,27 +25,44 @@ body {
     border-bottom: 1px solid $black;
     width: 100%;
     text-align: left;
+    font-family: $font_fira;
 
     &--description {
         margin-bottom: rem(10);
         display: flex;
         justify-content: space-between;
+        font-family: $font_roboto;
     }
 }
 
 a {
-    color: $blue;
+    color: $link_cl;
     text-decoration: none;
 
     &:hover {
-        color: $blue_dark;
+        color: $link_cl--hover;
+    }
+
+    &.btn_link {
+        display: block;
+        padding: rem(5) rem(15);
+        border: 3px solid $link_btn_border;
+        color:  $link_btn_cl;
+        border-radius: rem(20);
+        background-color: $link_btn_bg;
+
+        &:hover {
+            background-color: $link_btn_bg--hover;
+            color: $link_btn_cl--hover;
+            border: 3px solid $link_btn_border--hover;
+        }
     }
 }
 
 .sn_btn {
-    background-color: $green_2;
+    background-color: $btn_bg_default;
     color: $white;
-    border: 1px solid $green_2;
+    border: 1px solid $btn_bg_default_border;
     font-size: 1rem;
     padding: 0 rem(20);
     box-sizing: border-box;
@@ -56,23 +73,36 @@ a {
     display: inline-block;
 
     &:hover {
-        background-color: $green_3;
+        background-color: $btn_bg_default--hover;
     }
 
     &--error {
-        background-color: $red_2;
-        border: 1px solid $red_2;
+        background-color: $btn_bg_error;
+        border: 1px solid $btn_bg_error_border;
 
         &:hover {
-            background-color: $red;
+            background-color: $btn_bg_error--hover;
         }
     }
+
+    &--disbled {
+        background-color: $btn_bg_disbled;
+        border: 1px solid $btn_bg_disbled_border;
+
+        &:hover {
+            background-color: $btn_bg_disbled--hover;
+        }
+    }
+}
+
+input {
+    height: rem($input_height);
+    line-height: $input_lh;
 }
 
 input,
 textarea {
     width: 100%;
-    line-height: rem(25);
     padding: 0 rem(10);
     box-sizing: border-box;
     margin-bottom: rem(10);
@@ -80,10 +110,12 @@ textarea {
 
 textarea {
     resize: none;
+    line-height: rem(25);
 }
 
 fieldset {
     margin-bottom: rem(10);
+    text-align: left;
 }
 
 legend {
@@ -121,4 +153,8 @@ table {
             text-align: left;
         }
     }
+}
+
+.to_left {
+    text-align: left;
 }
