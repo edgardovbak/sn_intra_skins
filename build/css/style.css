@@ -520,6 +520,7 @@ a.btn_link:hover {
 input {
   height: 1.5625rem;
   line-height: 25;
+  overflow: hidden;
 }
 
 input,
@@ -529,6 +530,97 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 0.625rem;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: #607d8b;
+  width: 100%;
+  height: 1.25rem;
+  margin: 0;
+  border: none;
+  padding: 1px 2px;
+  border-radius: 0.875rem;
+  background: #607d8b;
+  outline: none;
+  /* no focus outline */
+}
+
+input[type="range"]::-moz-range-track {
+  border: inherit;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  border: inherit;
+  color: transparent;
+  /* don't drawn vertical reference line */
+  background: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+  background: transparent;
+}
+
+input[type="range"]::-ms-tooltip {
+  display: none;
+}
+
+/* thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 2.5rem;
+  height: 1.125rem;
+  border: none;
+  border-radius: 0.75rem;
+  /* android <= 2.2 */
+  /* older mobile safari and android > 2.2 */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5cb85c), to(#46a03f));
+  background-image: linear-gradient(to bottom, #5cb85c 0, #46a03f 100%);
+  /* W3C */
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 40px;
+  height: 18px;
+  border: none;
+  border-radius: 12px;
+  background-image: linear-gradient(to bottom, #5cb85c 0, #5cb85c 100%);
+  /* W3C */
+}
+
+input[type="range"]::-ms-thumb {
+  width: 40px;
+  height: 18px;
+  border-radius: 12px;
+  border: 0;
+  background-image: linear-gradient(to bottom, #5cb85c 0, #5cb85c 100%);
+  /* W3C */
+}
+
+input[type='file'] {
+  background-color: #607d8b;
+  color: #fff;
+  width: 100%;
+  padding: 0;
+  line-height: 1.5625rem;
+  height: 1.75rem;
+  border: none;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+input[type='file']::-webkit-file-upload-button {
+  border: none;
+  color: #000;
+  cursor: pointer;
+  /* android <= 2.2 */
+  /* older mobile safari and android > 2.2 */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #5cb85c), to(#5cb85c));
+  background-image: linear-gradient(to bottom, #5cb85c 0, #5cb85c 100%);
+  /* W3C */
 }
 
 textarea {

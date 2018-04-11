@@ -98,6 +98,7 @@ a {
 input {
     height: rem($input_height);
     line-height: $input_lh;
+    overflow: hidden;
 }
 
 input,
@@ -106,6 +107,90 @@ textarea {
     padding: 0 rem(10);
     box-sizing: border-box;
     margin-bottom: rem(10);
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: $green;
+    width: 100%;
+    height: rem(20);
+    margin: 0;
+    border: none;
+    padding: 1px 2px;
+    border-radius: rem(14);
+    background: $green;
+    outline: none; /* no focus outline */
+}
+
+input[type="range"]::-moz-range-track {
+    border: inherit;
+    background: transparent;
+}
+
+input[type="range"]::-ms-track {
+    border: inherit;
+    color: transparent; /* don't drawn vertical reference line */
+    background: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+    background: transparent;
+}
+
+input[type="range"]::-ms-tooltip {
+    display: none;
+}
+
+  /* thumb */
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: rem(40);
+    height: rem(18);
+    border: none;
+    border-radius: rem(12);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $green_2), color-stop(100%, $green_3)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , $green_2 0, $green_3 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, $green_2 0, $green_3 100%); /* W3C */
+    box-shadow: 0 0 3px 1px rgba(0,0,0,.5);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 40px;
+    height: 18px;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, $green_2 0, $green_2 100%); /* W3C */
+}
+
+input[type="range"]::-ms-thumb {
+    width: 40px;
+    height: 18px;
+    border-radius: 12px;
+    border: 0;
+    background-image: linear-gradient(to bottom, $green_2 0, $green_2  100%); /* W3C */
+}
+
+input[type='file'] {
+    background-color: $green;
+    color: $white;
+    width: 100%;
+    padding: 0;
+    line-height: rem($input_height);
+    height: rem($input_height + 3) ;
+    border: none;
+    border-radius: rem(20);
+    overflow: hidden;
+
+    &::-webkit-file-upload-button {
+        border: none;
+        color: $black;
+        cursor: pointer;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $green_2), color-stop(100%, $green_2)); /* android <= 2.2 */
+        background-image: -webkit-linear-gradient(top , $green_2 0, $green_2 100%); /* older mobile safari and android > 2.2 */;
+        background-image: linear-gradient(to bottom, $green_2 0, $green_2 100%); /* W3C */
+    }
 }
 
 textarea {
