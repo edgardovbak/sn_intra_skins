@@ -144,15 +144,15 @@ input[type="range"]::-ms-tooltip {
 
   /* thumb */
 
-input[type="range"]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb { 
     -webkit-appearance: none;
     width: rem(40);
     height: rem(18);
     border: none;
     border-radius: rem(12);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $green_2), color-stop(100%, $green_3)); /* android <= 2.2 */
-    background-image: -webkit-linear-gradient(top , $green_2 0, $green_3 100%); /* older mobile safari and android > 2.2 */;
-    background-image: linear-gradient(to bottom, $green_2 0, $green_3 100%); /* W3C */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $light_blue), color-stop(100%, $blue)); /* android <= 2.2 */
+    background-image: -webkit-linear-gradient(top , $light_blue 0, $blue 100%); /* older mobile safari and android > 2.2 */;
+    background-image: linear-gradient(to bottom, $light_blue 0, $blue 100%); /* W3C */
     box-shadow: 0 0 3px 1px rgba(0,0,0,.5);
 }
 
@@ -161,7 +161,7 @@ input[type="range"]::-moz-range-thumb {
     height: 18px;
     border: none;
     border-radius: 12px;
-    background-image: linear-gradient(to bottom, $green_2 0, $green_2 100%); /* W3C */
+    background-image: linear-gradient(to bottom, $light_blue 0, $blue 100%); /* W3C */
 }
 
 input[type="range"]::-ms-thumb {
@@ -169,7 +169,7 @@ input[type="range"]::-ms-thumb {
     height: 18px;
     border-radius: 12px;
     border: 0;
-    background-image: linear-gradient(to bottom, $green_2 0, $green_2  100%); /* W3C */
+    background-image: linear-gradient(to bottom, $light_blue 0, $blue  100%); /* W3C */
 }
 
 input[type='file'] {
